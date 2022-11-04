@@ -20,6 +20,7 @@ h1 {
     color: aliceblue;
     font-size: 70px;
     margin-bottom: 1rem;
+    background-color:#2A8B9E;
 }
 
 input {
