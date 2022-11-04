@@ -1,6 +1,13 @@
+import { AuthProvider } from "./context/auth";
+import { Login } from "./pages/Login";
+import { GlobalStyle } from "./styles/global";
+
 
 export function App() {
   return (
-    <h1>Teste de limpeza</h1>
+    <>
+    <GlobalStyle/>
+    <Login/>
+    </>
   );
 }
