@@ -1,7 +1,13 @@
-export function Home(){
-    return(
-        <div>
-            <h1>FirstLine</h1>
-        </div>
+import React from "react";
+import { Container } from "./styled";
+
+export function Home() {
+    return (
+        <Container>
+            <div>
+                <h1>Home</h1>
+            </div>
+        </Container>
+
     )
 }
