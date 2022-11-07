@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, ListaProduto, Product } from "./styled";
 import { Link } from "react-router-dom";
 import { Axios } from "axios";
+import { Navbar } from "../../components/Navbar";
 
 
 export function Home() {
@@ -17,6 +18,8 @@ export function Home() {
   }, []);
 
   return (
+    <>
+    <Navbar/>
     <Container>
       <ListaProduto>
         {produtos.map((produtos) => {
@@ -33,5 +36,8 @@ export function Home() {
       </ListaProduto>
       
     </Container>
+    </>
   );
 }
+
+export default Home;

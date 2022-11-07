@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, NavLink, NavMenu, NavBtnLink } from './styled';
+import { Nav, NavLink, NavMenu } from './styled';
 import logo from '../../assets/LogoBranco.png';
 
 
@@ -20,7 +20,7 @@ export const Navbar = () => {
           <NavLink to='/carrinho' activeStyle>
             Carrinho
           </NavLink>
-          <NavBtnLink to='/login'>Login</NavBtnLink>
+          {/* <NavBtnLink to='/login'>Login</NavBtnLink> */}
         </NavMenu>
       </Nav>
     </>
