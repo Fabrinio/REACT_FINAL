@@ -2,7 +2,6 @@ import { Navbar } from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from "./context/auth";
 import { Login } from "./pages/Login";
-import { Produto } from "./pages/Produto"
 import { Home } from "./pages/Home";
 import { Carrinho } from "./pages/Carrinho";
 import { Pedidos } from "./pages/Pedidos";
@@ -17,14 +16,13 @@ export function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact component={Home} />
-        <Route path='/Carrinho' component={Carrinho} />
-        <Route path='/Pedidos' component={Pedidos} />
-        <Route path='/Produtos' component={Produtos} />
-        <Route path='/Login' component={Login} />
+        <Route path='/' exact element={<Home />} />
+        <Route path='/Carrinho' element={<Carrinho />} />
+        <Route path='/Pedidos' element={<Pedidos/>} />
+        <Route path='/Produtos' element={<Produtos/>} />
+        <Route path='/Login' element={<Login/>} />
       </Routes>
     </Router>
-    <Home/>
     </>
   );
 }

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { Container } from "./styles.js";
 
 export function Produto() {
-
+  const {id} = useParams();
   const [produto, setProduto] = useState({});
 
 
   useEffect(()=>{
-    fetch(`http://localhost:8080/produto/3`)
+    fetch(`http://localhost:8080/produto/6`)
     .then((response)=>response.json())
     .then((data)=>{
         const{id,nome,descricao,valor,fotoLink} = data;
@@ -22,7 +23,7 @@ export function Produto() {
 
         setProduto(produto);
      });
-});
+},[id]);
 
   return (
     <Container>
