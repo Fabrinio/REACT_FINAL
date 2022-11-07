@@ -7,20 +7,20 @@ export const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink to='/Home'>
+        <NavLink to='/'>
           <img src={logo} alt='Logo' height={70}></img>
         </NavLink>
         <NavMenu>
-        <NavLink to='/Pedidos' activeStyle>
+        <NavLink to='/pedidos' activeStyle>
             Pedidos
           </NavLink>
-          <NavLink to='/Produtos' activeStyle>
+          <NavLink to='/produtos' activeStyle>
             Produtos
           </NavLink>
-          <NavLink to='/Carrinho' activeStyle>
+          <NavLink to='/carrinho' activeStyle>
             Carrinho
           </NavLink>
-          <NavBtnLink to='/Login'>Login</NavBtnLink>
+          <NavBtnLink to='/login'>Login</NavBtnLink>
         </NavMenu>
       </Nav>
     </>

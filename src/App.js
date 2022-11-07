@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { Carrinho } from "./pages/Carrinho";
 import { Pedidos } from "./pages/Pedidos";
 import { Produtos } from "./pages/Produtos";
+import { Produto } from "./pages/Produto";
 import { GlobalStyle } from "./styles/global";
 
 
@@ -17,10 +18,11 @@ export function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/Carrinho' element={<Carrinho />} />
-        <Route path='/Pedidos' element={<Pedidos/>} />
-        <Route path='/Produtos' element={<Produtos/>} />
-        <Route path='/Login' element={<Login/>} />
+        <Route path='/carrinho' element={<Carrinho />} />
+        <Route path='/pedidos' element={<Pedidos/>} />
+        <Route path='/produtos' element={<Produtos/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path="/produto/:id" element={<Produto />}/>
       </Routes>
     </Router>
     </>

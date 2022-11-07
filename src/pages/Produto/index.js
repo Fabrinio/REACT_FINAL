@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Container } from "./styles.js";
 
 export function Produto() {
@@ -8,7 +8,7 @@ export function Produto() {
 
 
   useEffect(()=>{
-    fetch(`http://localhost:8080/produto/6`)
+    fetch(`http://localhost:8080/produto/${id}`)
     .then((response)=>response.json())
     .then((data)=>{
         const{id,nome,descricao,valor,fotoLink} = data;
@@ -21,6 +21,7 @@ export function Produto() {
           fotoLink
         };
 
+        console.log(produto);
         setProduto(produto);
      });
 },[id]);
