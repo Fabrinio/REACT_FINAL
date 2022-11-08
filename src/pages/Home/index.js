@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, ListaProduto, Product } from "./styled";
 import { Link } from "react-router-dom";
-import { Axios } from "axios";
+import  axios  from "axios";
 import { Navbar } from "../../components/Navbar";
 
 
@@ -9,12 +9,11 @@ export function Home() {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/produto`)
-      .then((response) => response.json())
-      .then((data) => {
-        setProdutos(data);
-        console.log(data);
-      });
+    axios.get(`http://localhost:8080/produto`)
+    .then((response) => {
+      console.log(response.data);
+      setProdutos(response.data);
+    })
   }, []);
 
   return (
@@ -36,7 +35,7 @@ export function Home() {
       
     </Container>
     </>
-  );
+  )
 }
 
 export default Home;

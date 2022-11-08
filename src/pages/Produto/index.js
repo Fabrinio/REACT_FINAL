@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import axios from "axios";
+import { useEffect, useState, React } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container } from "./styles.js";
 
@@ -8,10 +9,9 @@ export function Produto() {
 
 
   useEffect(()=>{
-    fetch(`http://localhost:8080/produto/${id}`)
-    .then((response)=>response.json())
-    .then((data)=>{
-        const{id,nome,descricao,valor,fotoLink} = data;
+    axios.get(`http://localhost:8080/produto/${id}`)
+    .then((response)=>{
+        const{id,nome,descricao,valor,fotoLink} = response.data;
 
         const produto = {
           id, 
@@ -21,8 +21,8 @@ export function Produto() {
           fotoLink
         };
 
-        console.log(produto);
-        setProduto(produto);
+        console.log(response.data);
+        setProduto(response.data);
      });
 },[id]);
 

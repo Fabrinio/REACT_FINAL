@@ -13,7 +13,7 @@ export const ListaProduto = styled.ul`
   list-style: none;
   display: grid;
   /* aqui ta deixando responsivo com o minmax */
-  grid-template-columns: repeat(6, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
   column-gap: 3rem;
   row-gap: 4rem;
 `;
