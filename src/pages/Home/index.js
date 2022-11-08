@@ -19,7 +19,6 @@ export function Home() {
 
   return (
     <>
-    <Navbar/>
     <Container>
       <ListaProduto>
         {produtos.map((produtos) => {

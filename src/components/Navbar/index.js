@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink to='/'>
+        <NavLink to='/home'>
           <img src={logo} alt='Logo' height={70}></img>
         </NavLink>
         <NavMenu>
