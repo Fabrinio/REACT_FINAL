@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Container, ListaProduto, Product } from "./styled";
 import { Link } from "react-router-dom";
 import  axios  from "axios";
-import { Navbar } from "../../components/Navbar";
 
 
 export function Home() {
