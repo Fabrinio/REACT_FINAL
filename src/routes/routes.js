@@ -4,9 +4,10 @@ import useAuth from "../hooks/useAuth";
 import Home from "../pages/Home";
 import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
-import { Carrinho } from "../pages/Carrinho";
-import Pedidos from "../pages/Pedidos";
+import { NoPage } from "../pages/404";
+import {Pedidos} from "../pages/Pedidos";
 import { Produto } from "../pages/Produto";
+import {Carrinho} from "../pages/Carrinho";
 import { Navbar } from "../components/Navbar";
 import { AuthContext } from "../context/auth";
 
@@ -29,16 +30,15 @@ const RoutesApp = () => {
     }
     return (
       <>
-      
       <BrowserRouter>
       <Navbar/> 
         <Fragment>
           <Routes>
-            <Route exact path="/home" element={<Home />} />
-            <Route path="*" element={<Carrinho />} />
+            <Route exact path="/home" element={<Home />} />            
             <Route path="/carrinho" element={<Carrinho />} />
             <Route path="/pedidos" element={<Pedidos />} />
             <Route path="/produto/:id" element={<Produto />} />
+            <Route path="*" element={<NoPage />} />
           </Routes>
         </Fragment>
       </BrowserRouter>
