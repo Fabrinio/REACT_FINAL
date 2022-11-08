@@ -16,6 +16,8 @@ export const ListaProduto = styled.ul`
   grid-template-columns: repeat(5, minmax(100px, 1fr));
   column-gap: 3rem;
   row-gap: 4rem;
+ 
+  
 `;
 
 export const Product = styled.li`
@@ -24,6 +26,7 @@ export const Product = styled.li`
   align-items: center;
   background-color: #CAF0F8;
   border-radius: 1rem;
+ 
 
   img {
     margin-top: 10px;
@@ -39,6 +42,7 @@ export const Product = styled.li`
     background-color: #CAF0F8;
     font-size: 120%;
     text-align: center;
+    color: black;
   }
 
   img {

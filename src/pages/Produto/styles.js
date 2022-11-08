@@ -5,15 +5,19 @@ export const Container = styled.div`
     padding: 4rem 0;
     color: #2A8B9E;
 
+   
+
     h1 {
         margin: 3rem 0;
         margin-top: -10px;
+        color:black;
     }
 
     .produto{
         display: flex;
         align-items: center;
         justify-content: center;
+        color:black;
     }
 
     img {
@@ -29,12 +33,14 @@ export const Container = styled.div`
         align-items: flex-start;
         margin-left: 4rem;
         max-width: 50%;
+        color:black;
     }
 
     span {
         line-height: 130%;
         margin-bottom: 1rem;
         font-size: 110%;
+        color:black;
     }
 
     .price {
@@ -61,6 +67,7 @@ export const Container = styled.div`
  
     display: flex;
     flex-direction: row;
+    color:black;
 
  `;
 
@@ -73,6 +80,7 @@ display: grid;
 grid-template-rows: repeat(3, minmax(100px, 1fr));
 column-gap: 3rem;
 row-gap: 4rem;
+color:black;
 `;
 
 export const Product = styled.li`
@@ -96,6 +104,7 @@ span {
   background-color: #CAF0F8;
   font-size: 120%;
   text-align: center;
+  color:black;
 }
 
 img {
@@ -141,6 +150,7 @@ export const Container3 = styled.div`
         background-color: #CAF0F8;
         border-radius: 1rem;
         border-style: none;
+        color:black;
     }
 
     button{
@@ -149,6 +159,7 @@ export const Container3 = styled.div`
         margin-right: 30px;
         font-size: 26px;
         margin-bottom: 1rem;
+        color:black;
     }
 
     button:hover{

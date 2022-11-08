@@ -25,6 +25,7 @@ const RoutesApp = () => {
         <Routes>
           <Route path="/" element={<Signin />} />
           <Route exact path="/signup" element={<Signup />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
     );
@@ -40,7 +41,7 @@ const RoutesApp = () => {
             <Route path="/produto/:id" element={<Produto />} />
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/comprar" element={<Comprar />} />
-            <Route path="*" element={<NoPage />} />
+            <Route path="*" element={<NoPage />} />            
           </Routes>
         </Fragment>
       </BrowserRouter>

@@ -8,5 +8,6 @@ export const Input = styled.input`
   font-size: 16px;
 
   background-color: #f0f2f5;
+  color: gray;
   border: none;
 `;

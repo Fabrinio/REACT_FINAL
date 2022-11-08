@@ -5,6 +5,9 @@ import * as C from "./style";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import login from "../../assets/Login.png";
+import { ToastContainer, toast } from "react-toastify";
+
+
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -14,6 +17,16 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const { signup } = useAuth();
+  const notify = () => toast.success('Conta cadastrada com sucesso!', {
+    position: "bottom-right",
+    autoClose: 2000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "ligth",
+    });
 
   const handleSignup = () => {
     if (!email | !emailConf | !senha) {
@@ -31,11 +44,17 @@ const Signup = () => {
       return;
     }
 
-    alert("Usuário cadastrado com sucesso!");
-    navigate("/");
+    notify();
+    setTimeout(() => {
+      console.log("Delayed for 3 second.");
+       navigate("/");
+    }, "3000")
+   
   };
 
+
   return (
+    <>
     <C.Container>
       <C.Label><img src={login} alt="Imagem Login"/></C.Label>
       <C.Content>
@@ -67,6 +86,19 @@ const Signup = () => {
         </C.LabelSignin>
       </C.Content>
     </C.Container>
+    <ToastContainer
+    position="bottom-right"
+    autoClose={5000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick={false}
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="colored"
+  />
+  </>
   );
 };
 

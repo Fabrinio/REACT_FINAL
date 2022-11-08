@@ -51,7 +51,6 @@ export function Produto() {
             <Link to={`/comprar`}>
             <button>Comprar</button>
             </Link>
-            <button>Adicionar ao Carrinho</button>
           </div>
         </div>
       </Container>

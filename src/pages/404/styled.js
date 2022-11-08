@@ -9,22 +9,25 @@ export const Container = styled.div`
         display: flex;
         margin-top: 7%;
         margin-left: 30rem;
-        height: 300px;
-        width: 300px;
+        height:19rem;
+        width: 19rem;
 
     }
 
     h1{
         text-align: center;
-        margin-top: -180px;
-        margin-left: 120px;
+        margin-top: -10%;
+        margin-left: 10%;
+        color: #002447;
     }
     h2{
         text-align: center;
-        margin-left: 120px;
+        margin-left: 10%;
+        color: #002447;
     }
     h3{
         text-align: center;
-        margin-left: 120px;
+        margin-left: 10%;
+        color: #002447;
     }
 `;

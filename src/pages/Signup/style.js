@@ -1,17 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    width: 30vw;
+    height: 90%;
+    width: 40%;
     flex-direction: column;
     margin: auto;
-    margin-top: 12rem;
+    margin-top: 10rem;
     background-color: #2A8B9E;
     border-radius: 2rem;
     box-shadow: 20px 20px 10px #002447;
+
+
+
+
 `;
 
 export const Content = styled.div`
@@ -32,9 +36,11 @@ export const Label = styled.label`
   font-size: 18px;
   font-weight: 600;
   color: white;
+  background-color:#2A8B9E;
 
   img{
-    background-color:#2A8B9E
+    background-color:#2A8B9E;
+    margin-top: 10%;
   }
 `;
 
