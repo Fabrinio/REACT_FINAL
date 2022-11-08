@@ -10,6 +10,7 @@ import { Produto } from "../pages/Produto";
 import {Carrinho} from "../pages/Carrinho";
 import { Navbar } from "../components/Navbar";
 import { AuthContext } from "../context/auth";
+import { Comprar } from "../pages/Comprar";
 
 /*const Private = ({ Item }) => {
   console.log("POSITIVO", signed);
@@ -38,6 +39,7 @@ const RoutesApp = () => {
             <Route path="/carrinho" element={<Carrinho />} />
             <Route path="/pedidos" element={<Pedidos />} />
             <Route path="/produto/:id" element={<Produto />} />
+            <Route path="/comprar" element={<Comprar />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </Fragment>
