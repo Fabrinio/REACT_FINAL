@@ -7,7 +7,7 @@ import Signup from "../pages/Signup";
 import { NoPage } from "../pages/404";
 import {Pedidos} from "../pages/Pedidos";
 import { Produto } from "../pages/Produto";
-import {Carrinho} from "../pages/Carrinho";
+import { Produtos } from "../pages/Produtos";
 import { Navbar } from "../components/Navbar";
 import { AuthContext } from "../context/auth";
 import { Comprar } from "../pages/Comprar";
@@ -36,9 +36,9 @@ const RoutesApp = () => {
         <Fragment>
           <Routes>
             <Route exact path="/home" element={<Home />} />            
-            <Route path="/carrinho" element={<Carrinho />} />
             <Route path="/pedidos" element={<Pedidos />} />
             <Route path="/produto/:id" element={<Produto />} />
+            <Route path="/produtos" element={<Produtos />} />
             <Route path="/comprar" element={<Comprar />} />
             <Route path="*" element={<NoPage />} />
           </Routes>

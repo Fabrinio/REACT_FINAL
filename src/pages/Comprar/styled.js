@@ -12,6 +12,22 @@ export const Container = styled.div`
         margin-left: -77px;
     }
 
+    button{
+      margin-top: 10px;
+      color: white;
+      background-color: #2A8B9E;
+      width: 350px;
+      padding: 20px;
+      border-radius: 2rem;
+      border: 0px;
+      cursor: pointer;
+      &:hover {
+      transition: all 0.2s ease-in-out;
+      background: #256ce1;
+      color: #010606;
+      }
+    }
+
 
 `;
 

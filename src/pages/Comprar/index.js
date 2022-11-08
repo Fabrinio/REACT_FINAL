@@ -32,6 +32,7 @@ export function Comprar() {
         placeholder="Digite o numero se existir"
       />
       </Forms>
+      <button onClick={alert("Compra realizada com sucesso!")}>Finalizar compra</button>
     </Container>
   );
 }
