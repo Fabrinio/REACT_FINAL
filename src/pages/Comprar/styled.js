@@ -21,6 +21,7 @@ export const Container = styled.div`
       border-radius: 2rem;
       border: 0px;
       cursor: pointer;
+      font-size: 120%;
       &:hover {
       transition: all 0.2s ease-in-out;
       background: #256ce1;

@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, NavLink, NavMenu, NavBtnLink } from "./styled";
 import logo from "../../assets/LogoBranco.png";
 import useAuth from "../../hooks/useAuth";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const { signout } = useAuth();

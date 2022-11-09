@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import { Fragment} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import Home from "../pages/Home";
@@ -9,7 +9,6 @@ import {Pedidos} from "../pages/Pedidos";
 import { Produto } from "../pages/Produto";
 import { Produtos } from "../pages/Produtos";
 import { Navbar } from "../components/Navbar";
-import { AuthContext } from "../context/auth";
 import { Comprar } from "../pages/Comprar";
 
 /*const Private = ({ Item }) => {
